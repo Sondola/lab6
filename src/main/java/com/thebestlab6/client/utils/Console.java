@@ -1,0 +1,116 @@
+package com.thebestlab6.client.utils;
+
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+
+/**
+ * Working environment for command line reading
+ *
+ * @author NastyaBordun
+ * @version 1.1
+ */
+
+public class Console {
+    /**
+     * Variable to identify the need for further work
+     */
+    private boolean work;
+    /**
+     * Reader for line reading support {@link BufferedReader#readLine()}
+     */
+    private BufferedReader br;
+    /**
+     * Class providing getting correct information from the user {@link AskManager}
+     */
+    private AskManager askManager;
+
+    private ClientHelper clientHelper;
+
+    private StringWorking stringWorking = null;
+
+    /**
+     * Constructor - new working environment creating
+     *
+     * @see Console#interactiveMode()
+     */
+    public Console(BufferedReader br, AskManager askManager, ClientHelper clientHelper) {
+        this.br = br;
+        this.askManager = askManager;
+        this.clientHelper = clientHelper;
+        this.work = true;
+    }
+
+    /**
+     * Setting {@link StringWorking} editor for commands
+     *
+     * @param stringWorking
+     */
+    public void setStringWorking(StringWorking stringWorking) {
+        this.stringWorking = stringWorking;
+    }
+
+    /**
+     * Setting working state
+     *
+     * @param work needful state
+     */
+    public void setWork(boolean work) {
+        this.work = work;
+    }
+
+    /**
+     * Checking the working state
+     *
+     * @return working state
+     */
+    public boolean isWork() {
+        return work;
+    }
+
+    /**
+     * Work in the interactive mode
+     */
+    public void interactiveMode() {
+        while (work) {
+            try {
+                String command = br.readLine().trim();
+                clientHelper.handle(command);
+            } catch (IOException e) {
+                System.out.println("Ошибка ввода");
+            }
+        }
+    }
+
+    /**
+     * Work with a script
+     *
+     * @param path     path to file passed by chooseCommand method
+     * @see AskManager#addScriptMode(BufferedReader)
+     */
+    public void scriptMode(String path) {
+        try {
+            FileInputStream file = new FileInputStream(path);
+            BufferedInputStream bf2 = new BufferedInputStream(file);
+            BufferedReader r2 = new BufferedReader(new InputStreamReader(bf2, StandardCharsets.UTF_8));
+
+            //BufferedReader br = new BufferedReader(new FileReader(path));
+            askManager.addScriptMode(r2);
+
+            System.out.println("Взаимодействие с файлом-скриптом");
+
+//            this.setWork(true);
+            String line = r2.readLine().trim();
+            while (line != null && this.work) {
+//            while(line != null){
+                clientHelper.handle(line);
+                line = r2.readLine();
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Файл не найден");
+        } catch (IOException e) {
+            System.out.println("Ошибка ввода");
+        }
+    }
+
+
+}

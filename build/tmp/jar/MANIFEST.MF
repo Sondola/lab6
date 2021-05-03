@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: stax-utils-20070216.jar
+Main-Class: com.thebestlab6.server.ServerMain
+

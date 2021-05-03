@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="stax-utils-20070216">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../lab5/lib/stax-utils-20070216.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
