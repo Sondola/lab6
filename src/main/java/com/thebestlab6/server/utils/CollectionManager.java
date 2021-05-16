@@ -3,7 +3,7 @@ package com.thebestlab6.server.utils;
 import com.thebestlab6.common.data.*;
 
 import com.sun.xml.txw2.output.IndentingXMLStreamWriter;
-//import javanet.staxutils.IndentingXMLStreamWriter;
+import com.thebestlab6.server.ServerMain;
 import org.xml.sax.SAXException;
 import com.thebestlab6.server.comparators.CarComparator;
 import com.thebestlab6.server.comparators.SoundtrackNameComparator;
@@ -14,18 +14,19 @@ import javax.xml.parsers.SAXParserFactory;
 import javax.xml.stream.XMLOutputFactory;
 import javax.xml.stream.XMLStreamException;
 import javax.xml.stream.XMLStreamWriter;
-import java.io.File;
-import java.io.IOException;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.time.LocalDateTime;
 import java.util.LinkedHashSet;
 
 public class CollectionManager {
+    private String string = "";
     private LinkedHashSet<HumanBeing> humanBeings;
     private LocalDateTime lastSave;
     private LocalDateTime lastInit;
+    public File myFile;
 
     public CollectionManager(File xmlFile) {
+        myFile = xmlFile;
         humanBeings = new LinkedHashSet<>();
         lastInit = LocalDateTime.now();
         lastSave = null;
@@ -112,45 +113,50 @@ public class CollectionManager {
     }
 
     public void showCollection() {
+        string = "";
         if (humanBeings.size() != 0)
             for (HumanBeing human : humanBeings) {
-                System.out.println(human.toString());
+                string += human.toString();
             }
-        else System.out.println("Коллекция пуста!");
+        else string = "Collection is empty!";
     }
 
     public void showCollection(LinkedHashSet<HumanBeing> humanBeings2) {
+        string = "";
         if (humanBeings2.size() != 0)
             for (HumanBeing human : humanBeings2) {
-                System.out.println(human.toString());
+                string += human.toString();
             }
-        else System.out.println("Коллекция пуста!");
+        else string = "Collection is empty!";
     }
 
     public void setNewHuman(int id, HumanBeing human) {
-        for (HumanBeing humanBeing : humanBeings) {
-            if (humanBeing.getId() == id) humanBeing = human;
-            break;
-        }
+        //for (HumanBeing humanBeing : humanBeings) {
+            //if (humanBeing.getId() == id) humanBeing = human;
+            //break;
+        //}
+        humanBeings.stream().filter(humanBeing -> humanBeing.getId() == id).map(humanBeing -> human);
     }
 
     public void removeById(int id) {
-        humanBeings.remove(getById(id));
+        humanBeings.removeIf(humanBeing -> humanBeing.getId() == id);
     }
 
     public void removeGreater(HumanBeing human) {
-        for (HumanBeing humanBeing : humanBeings) {
-            if (Float.compare(humanBeing.getImpactSpeed(), human.getImpactSpeed()) == 1)
-                humanBeings.remove(humanBeing);
-        }
+        //for (HumanBeing humanBeing : humanBeings) {
+            //if (Float.compare(humanBeing.getImpactSpeed(), human.getImpactSpeed()) == 1)
+                //humanBeings.remove(humanBeing);
+        //}
+        humanBeings.removeIf(humanBeing -> Float.compare(humanBeing.getImpactSpeed(), human.getImpactSpeed()) == 1);
     }
 
     public void removeByCar(Car car) {
         CarComparator carComparator = new CarComparator();
-        for (HumanBeing humanBeing : humanBeings) {
-            if (carComparator.compare(humanBeing.getCar(), car) == 0)
-                humanBeings.remove(humanBeing);
-        }
+        //for (HumanBeing humanBeing : humanBeings) {
+            //if (carComparator.compare(humanBeing.getCar(), car) == 0)
+                //humanBeings.remove(humanBeing);
+        //}
+        humanBeings.removeIf(humanBeing -> carComparator.compare(humanBeing.getCar(), car) == 0);
     }
 
     public HumanBeing maxByCreationDate() {
@@ -176,7 +182,14 @@ public class CollectionManager {
         return humans;
     }
 
-    public void saveCollection(OutputStreamWriter fos) throws XMLStreamException, XMLStreamException {
+    public void saveCollection() throws XMLStreamException, XMLStreamException {
+        OutputStreamWriter fos = null;
+        try {
+            fos = new OutputStreamWriter(new FileOutputStream(myFile));
+        } catch (FileNotFoundException e) {
+            ServerMain.logger.info("Файл для записи не найден");
+            ResponseBuilder.appendError("Файл для записи не найден");
+        }
         XMLOutputFactory output = XMLOutputFactory.newInstance();
         XMLStreamWriter writer = new IndentingXMLStreamWriter(output.createXMLStreamWriter(fos));
 
@@ -191,5 +204,9 @@ public class CollectionManager {
         // Закрываем XML-документ
         writer.writeEndDocument();
         writer.flush();
+    }
+
+    public String getString() {
+        return string;
     }
 }

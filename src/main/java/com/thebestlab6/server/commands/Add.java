@@ -5,6 +5,8 @@ import com.thebestlab6.common.exceptions.WrongAmountOfElementsException;
 import com.thebestlab6.server.utils.CollectionManager;
 import com.thebestlab6.server.utils.ResponseBuilder;
 
+import javax.xml.stream.XMLStreamException;
+
 public class Add implements Executable{
     private CollectionManager collectionManager;
 
@@ -18,7 +20,7 @@ public class Add implements Executable{
                 throw new WrongAmountOfElementsException("Неправильное количество аргументов для команды");
             }
             collectionManager.add((HumanBeing) human);
-            System.out.println("Элемент успешно добавлен в коллекцию!");
+            ResponseBuilder.append("Элемент успешно добавлен в коллекцию!");
             return true;
         } catch (WrongAmountOfElementsException e) {
             ResponseBuilder.appendError(e.getMessage());

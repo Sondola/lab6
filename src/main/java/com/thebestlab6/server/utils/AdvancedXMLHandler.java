@@ -71,7 +71,7 @@ public class AdvancedXMLHandler extends DefaultHandler{
                 }
             }
         } catch (NumberFormatException e) {
-            System.out.println("Ошибка при чтении файла! Введите корректные данные!");
+            System.out.println("Error while reading file! Enter the correct data!");
             System.exit(0);
         }
     }

@@ -31,6 +31,6 @@ public class Request implements Serializable {
 
     @Override
     public String toString() {
-        return "Request[" + command + "]";
+        return "Request[" + command + "]\n" + "Argument: " + commandArg + "\nObject: " + obj;
     }
 }

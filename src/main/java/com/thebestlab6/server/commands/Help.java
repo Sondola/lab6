@@ -1,14 +1,17 @@
 package com.thebestlab6.server.commands;
 
 import com.thebestlab6.common.exceptions.WrongAmountOfElementsException;
+import com.thebestlab6.server.utils.ResponseBuilder;
 
 public class Help implements Executable{
+    private String string = "";
+
     public boolean execute(String str, Object humanObj) {
         try{
             if(str.length() != 0){
                 throw new WrongAmountOfElementsException("Неправильное количество аргументов для команды");
             }
-            System.out.println("Программа поддерживает выполнение следующих команд:\n" +
+            string = "Программа поддерживает выполнение следующих команд:\n" +
                     "help - вывести справку по доступным командам\n" +
                     "info - вывести в стандартный поток вывода информацию о коллекции (тип, дата инициализации, количество элементов и т.д.)\n" +
                     "show - вывести в стандартный поток вывода все элементы коллекции в строковом представлении\n" +
@@ -24,12 +27,17 @@ public class Help implements Executable{
                     "remove_greater {element} : удалить из коллекции все элементы, превышающие заданный\n" +
                     "remove_all_by_car car : удалить из коллекции все элементы, значение поля car которого эквивалентно заданному\n" +
                     "max_by_creation_date : вывести любой объект из коллекции, значение поля creationDate которого является максимальным\n" +
-                    "filter_greater_than_soundtrack_name soundtrackName : вывести элементы, значение поля soundtrackName которых больше заданного");
+                    "filter_greater_than_soundtrack_name soundtrackName : вывести элементы, значение поля soundtrackName которых больше заданного";
+            ResponseBuilder.append(string);
             return true;
         }
         catch (WrongAmountOfElementsException e){
-            System.out.println(e.getMessage());
+            ResponseBuilder.appendError(e.getMessage());
             return false;
         }
+    }
+
+    public String getString() {
+        return string;
     }
 }

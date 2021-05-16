@@ -77,11 +77,14 @@ public class StringWorking {
                     }
                     scriptNames.push(line);
                     console.scriptMode(line);
+                    scriptNames.pop();
+                    break;
                 }
                 case EXIT: {console.setWork(false);}
             }
         } catch (RecursionScriptException | IncorrectScriptInputException e) {
             System.out.println(e.getMessage());
+            return null;
         }
         return new Request(commandArr[0], line);
     }
@@ -113,11 +116,12 @@ public class StringWorking {
                         throw new WrongAmountOfElementsException("Неправильное количество аргументов!");
                     else return ArgumentState.ADD_OBJECT;
                 case "update":
-                    if (arg.length() != 0)
+                    if (arg.length() == 0) {
                         throw new WrongAmountOfElementsException("Неправильное количество аргументов!");
+                    }
                     else return ArgumentState.UPDATE_OBJECT;
                 case "execute_script":
-                    if (arg.length() != 0)
+                    if (arg.length() == 0)
                         throw new WrongAmountOfElementsException("Неправильное количество аргументов!");
                     else return ArgumentState.SCRIPT_MODE;
                 case "exit":
@@ -142,6 +146,9 @@ public class StringWorking {
     }
 
     public HumanBeing addHuman() throws IncorrectScriptInputException {
+        if (!scriptNames.empty()) {
+            askManager.setInteractiveMode(false);
+        }
         HumanBeing human = new HumanBeing(askManager.askName(),
                 askManager.askCoordinates(),
                 askManager.askRealHero(),
@@ -151,6 +158,7 @@ public class StringWorking {
                 askManager.askMinutesOfWaiting(),
                 askManager.askMood(),
                 askManager.askCar());
+        askManager.setInteractiveMode(true);
         return human;
     }
 

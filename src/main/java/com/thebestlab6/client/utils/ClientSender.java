@@ -1,5 +1,6 @@
 package com.thebestlab6.client.utils;
 
+import com.thebestlab6.client.ClientMain;
 import com.thebestlab6.common.objects.Request;
 
 import java.io.ByteArrayOutputStream;
@@ -10,31 +11,33 @@ import java.nio.ByteBuffer;
 import java.nio.channels.DatagramChannel;
 
 public class ClientSender {
-    private DatagramChannel datagramChannel;
     private InetSocketAddress socketAdd;
     private ByteBuffer buffer = ByteBuffer.allocate(8192);
+    private DatagramChannel datagramChannel;
     //private Selector selector;
 
-    public ClientSender(DatagramChannel datagramChannel, InetSocketAddress socketAddress) {
-        this.datagramChannel = datagramChannel;
+    public ClientSender(InetSocketAddress socketAddress, DatagramChannel datagramChannel) {
         this.socketAdd = socketAddress;
+        this.datagramChannel =datagramChannel;
         //this.selector = selector;
     }
 
     public boolean send(Request request) {
         try (ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
              ObjectOutputStream objectOutputStream= new ObjectOutputStream(byteArrayOutputStream)){
-            //datagramChannel.socket().bind(socketAdd);
+
             objectOutputStream.writeObject(request);
+
             buffer.put(byteArrayOutputStream.toByteArray());
-            buffer.clear();
-            datagramChannel.send(buffer, socketAdd);
             buffer.flip();
-            datagramChannel.disconnect();
+
+            datagramChannel.send(buffer, socketAdd);
+
+            buffer.clear();
             return true;
         } catch (IOException e) {
             System.out.println(e.getMessage());
-            System.out.println("Данные не отправлены");
+            System.out.println("Package isn't sent");
             return false;
         }
     }

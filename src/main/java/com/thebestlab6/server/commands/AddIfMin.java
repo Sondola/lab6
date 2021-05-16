@@ -3,6 +3,9 @@ package com.thebestlab6.server.commands;
 import com.thebestlab6.common.data.HumanBeing;
 import com.thebestlab6.common.exceptions.*;
 import com.thebestlab6.server.utils.CollectionManager;
+import com.thebestlab6.server.utils.ResponseBuilder;
+
+import javax.xml.stream.XMLStreamException;
 
 public class AddIfMin implements Executable{
     private CollectionManager collectionManager;
@@ -20,19 +23,16 @@ public class AddIfMin implements Executable{
             if (collectionManager.collectionSize() != 0) {
                 if (human.getImpactSpeed() < collectionManager.getMinImpactSpeed()) {
                     collectionManager.add(human);
-                    System.out.println("Элемент успешно добавлен в коллекцию!");
+                    ResponseBuilder.append("Элемент успешно добавлен в коллекцию!");
                 } else
-                    System.out.println("Элемент не был добавлен в коллекцию, так как его значение поля ImpactSpeed больше минимального");
+                    ResponseBuilder.append("Элемент не был добавлен в коллекцию, так как его значение поля ImpactSpeed больше минимального");
             } else throw new NoElementsInCollectionException("В коллекции нет элементов для сравнения!");
             return true;
-        } /*catch (IncorrectScriptInputException e) {
-            System.out.println("Не удалось выполнить скрипт! Введены некорректные данные!");
-            return false;
-        } */catch (WrongAmountOfElementsException e) {
-            System.out.println(e.getMessage());
+        } catch (WrongAmountOfElementsException e) {
+            ResponseBuilder.appendError(e.getMessage());
             return false;
         } catch (NoElementsInCollectionException e) {
-            System.out.println(e.getMessage());
+            ResponseBuilder.appendError(e.getMessage());
             return false;
         }
     }

@@ -4,6 +4,8 @@ import com.thebestlab6.common.objects.Request;
 import com.thebestlab6.common.objects.Response;
 import com.thebestlab6.common.objects.ResponseAnswer;
 
+import java.util.Locale;
+
 public class Analyzer {
     private CommandManager commandManager;
 
@@ -19,7 +21,7 @@ public class Analyzer {
     }
 
     public ResponseAnswer analyze(String commandName, String commandArg, Object commandObject) {
-        switch(commandName) {
+        switch(commandName.toUpperCase(Locale.ROOT)) {
             case "HELP":
                 if(!commandManager.help(commandArg, commandObject)) return ResponseAnswer.ERROR;
                 else return ResponseAnswer.OK;
@@ -50,12 +52,12 @@ public class Analyzer {
             case "CLEAR":
                 if(!commandManager.clear(commandArg, commandObject)) return ResponseAnswer.ERROR;
                 else return ResponseAnswer.OK;
-            /*case "EXECUTE_SCRIPT":
+            case "EXECUTE_SCRIPT":
                 if(!commandManager.execute_script(commandArg, commandObject)) return ResponseAnswer.ERROR;
                 else return ResponseAnswer.OK;
             case "EXIT":
                 if(!commandManager.exit(commandArg, commandObject)) return ResponseAnswer.ERROR;
-                else return ResponseAnswer.OK;*/
+                else return ResponseAnswer.OK;
             case "MAX_BY_CREATION_DATE":
                 if (!commandManager.max_by_creation_date(commandArg, commandObject)) return ResponseAnswer.ERROR;
                 else return ResponseAnswer.OK;
@@ -66,7 +68,7 @@ public class Analyzer {
                 if(!commandManager.filter_greater_than_soundtrack_name(commandArg, commandObject)) return ResponseAnswer.ERROR;
                 else return ResponseAnswer.OK;
             default:
-                ResponseBuilder.appendError("Команда " + commandName + " не входит в список доступных");
+                ResponseBuilder.appendError("Command " + commandName + " is not available");
                 return ResponseAnswer.ERROR;
         }
     }

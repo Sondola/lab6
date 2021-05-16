@@ -7,7 +7,7 @@
       <coordinateX>1</coordinateX>
       <coordinateY>2.0</coordinateY>
     </coordinates>
-    <creationDate>2021-03-22 23:52:22</creationDate>
+    <creationDate>2021-05-14 19:14:08</creationDate>
     <realHero>true</realHero>
     <hasToothpick>true</hasToothpick>
     <impactSpeed>222.0</impactSpeed>
@@ -25,7 +25,7 @@
       <coordinateX>3</coordinateX>
       <coordinateY>4.0</coordinateY>
     </coordinates>
-    <creationDate>2021-03-22 23:52:22</creationDate>
+    <creationDate>2021-05-14 19:14:08</creationDate>
     <realHero>false</realHero>
     <hasToothpick>false</hasToothpick>
     <impactSpeed>111.0</impactSpeed>
@@ -34,6 +34,24 @@
     <mood>CALM</mood>
     <car>
       <carName>Volga</carName>
+    </car>
+  </human>
+  <human>
+    <id>3</id>
+    <name>wer</name>
+    <coordinates>
+      <coordinateX>3</coordinateX>
+      <coordinateY>4.0</coordinateY>
+    </coordinates>
+    <creationDate>2021-05-14 19:14:08</creationDate>
+    <realHero>true</realHero>
+    <hasToothpick>false</hasToothpick>
+    <impactSpeed>45.0</impactSpeed>
+    <soundtrackName>wer</soundtrackName>
+    <minutesOfWaiting>45.0</minutesOfWaiting>
+    <mood>SADNESS</mood>
+    <car>
+      <carName>erty</carName>
     </car>
   </human>
 </humanBeing>

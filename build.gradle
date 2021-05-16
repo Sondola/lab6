@@ -8,14 +8,16 @@ mainClassName = 'com.thebestlab6.server.ServerMain'
 jar {
     manifest {
         attributes 'Main-Class': mainClassName
-        attributes 'Class-Path': 'stax-utils-20070216.jar'
+    }
+    from {
+        configurations.runtimeClasspath.collect {it.isDirectory() ? it : zipTree(it)}
     }
 }
 
 apply plugin: 'idea'
 
 group 'com.thebestlab6'
-version '1.0-SNAPSHOT'
+version '1.0-SNAPSHOT-SERVER'
 
 repositories {
     mavenCentral()
@@ -28,3 +30,5 @@ dependencies {
 run{
     standardInput = System.in
 }
+
+compileJava.options.encoding = 'utf-8'

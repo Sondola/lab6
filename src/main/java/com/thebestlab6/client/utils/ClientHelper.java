@@ -4,16 +4,16 @@ import com.thebestlab6.common.exceptions.IncorrectCommandException;
 import com.thebestlab6.common.objects.Request;
 import com.thebestlab6.common.objects.Response;
 
+import java.io.IOException;
 import java.net.InetAddress;
+import java.nio.channels.DatagramChannel;
 
 public class ClientHelper {
-    private final InetAddress host;
-    private ClientReciever receiver;
+    private ClientReceiver receiver;
     private ClientSender sender;
     private StringWorking stringWorking;
 
-    public ClientHelper(InetAddress host, ClientReciever receiver, ClientSender sender, StringWorking stringWorking){
-        this.host = host;
+    public ClientHelper(ClientReceiver receiver, ClientSender sender, StringWorking stringWorking){
         this.receiver = receiver;
         this.sender = sender;
         this.stringWorking = stringWorking;
@@ -24,7 +24,7 @@ public class ClientHelper {
             Request request = stringWorking.makeRequest(command);
             if(request != null){
                 if(sender.send(request)){
-                    System.out.println(request.toString());
+                    //System.out.println(request.toString());
                     Response response = receiver.getResponse();
                     if(response != null){
                         System.out.print(response.getResponseBody());

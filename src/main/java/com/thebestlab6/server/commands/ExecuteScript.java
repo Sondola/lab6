@@ -1,6 +1,7 @@
 package com.thebestlab6.server.commands;
 
 import com.thebestlab6.common.exceptions.WrongAmountOfElementsException;
+import com.thebestlab6.server.utils.ResponseBuilder;
 
 /**
  * Command for script executing from the certain file
@@ -31,7 +32,7 @@ public class ExecuteScript implements Executable{
             return true;
         }
         catch (WrongAmountOfElementsException e){
-            System.out.println(e.getMessage());
+            ResponseBuilder.appendError(e.getMessage());
             return false;
         }
     }

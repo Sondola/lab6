@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cf3848c3-7fbb-4419-92f8-8065cc2b2950" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileContent/fileContent.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/stax_utils_20070216.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/ClientMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/ClientMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/AskManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/AskManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/ClientHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/ClientHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/ClientReciever.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/ClientSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/ClientSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/Console.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/Console.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/StringWorking.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/client/utils/StringWorking.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/common/objects/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/common/objects/Request.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/common/objects/Response.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/common/objects/Response.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/common/objects/ResponseAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/common/objects/ResponseAnswer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/ServerMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/ServerMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Add.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Add.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/AddIfMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/AddIfMax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/AddIfMin.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/AddIfMin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Clear.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Clear.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/ExecuteScript.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/ExecuteScript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/FilterGreaterThanSoundtrackName.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/FilterGreaterThanSoundtrackName.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Help.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Help.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Info.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/MaxByCreationDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/MaxByCreationDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/RemoveAllByCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/RemoveAllByCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/RemoveById.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/RemoveById.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/RemoveGreater.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/RemoveGreater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Save.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Save.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Show.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Show.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Update.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/commands/Update.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/AdvancedXMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/AdvancedXMLHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/Analyzer.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/Analyzer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/CollectionManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/CollectionManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/ServerHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/ServerHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/ServerReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/ServerReceiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/ServerSender.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/thebestlab6/server/utils/ServerSender.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/thebestlab6-1.0-SNAPSHOT.tar" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/thebestlab6-1.0-SNAPSHOT.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/distributions/thebestlab6-1.0-SNAPSHOT.zip" beforeDir="false" afterPath="$PROJECT_DIR$/build/distributions/thebestlab6-1.0-SNAPSHOT.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/thebestlab6-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/thebestlab6-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/ClientMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/ClientMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/ClientHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/ClientHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/ClientReciever.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/ClientSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/ClientSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/Console.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/Console.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/StringWorking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/client/utils/StringWorking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/common/objects/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/common/objects/Request.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/common/objects/ResponseAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/common/objects/ResponseAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/ServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/ServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Add.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Add.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/AddIfMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/AddIfMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/AddIfMin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/AddIfMin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Clear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Clear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/ExecuteScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/ExecuteScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/FilterGreaterThanSoundtrackName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/FilterGreaterThanSoundtrackName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/MaxByCreationDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/MaxByCreationDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/RemoveAllByCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/RemoveAllByCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/RemoveById.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/RemoveById.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/RemoveGreater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/RemoveGreater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Save.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Show.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Show.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Update.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/commands/Update.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/AdvancedXMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/AdvancedXMLHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/Analyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/Analyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/CollectionManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/CollectionManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/ServerHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/ServerHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/ServerReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/ServerReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/ServerSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thebestlab6/server/utils/ServerSender.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="2" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="thebestlab6" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="thebestlab6" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="thebestlab6" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1s45brnFeimgSvUjNNDMoBm5gDi" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Julie\Desktop\Программирование\thebestlab6\build\libs" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.thebestlab6 [jar]">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thebestlab6.client.ClientMain" />
+      <module name="thebestlab6.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thebestlab6.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.thebestlab6.server.ServerMain" />
+      <module name="thebestlab6.main" />
+      <option name="PROGRAM_PARAMETERS" value="lab5.xml" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.thebestlab6.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="thebestlab6 [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="thebestlab6 [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="thebestlab6-1.0-SNAPSHOT-CLIENT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/thebestlab6-1.0-SNAPSHOT-CLIENT.jar" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.ServerMain" />
+      <item itemvalue="Gradle.thebestlab6 [build]" />
+      <item itemvalue="JAR Application.thebestlab6-1.0-SNAPSHOT-CLIENT.jar" />
+      <item itemvalue="Application.ClientMain" />
+      <item itemvalue="Gradle.thebestlab6 [jar]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.thebestlab6 [jar]" />
+        <item itemvalue="Application.ClientMain" />
+        <item itemvalue="Gradle.thebestlab6 [build]" />
+        <item itemvalue="Application.ServerMain" />
+        <item itemvalue="JAR Application.thebestlab6-1.0-SNAPSHOT-CLIENT.jar" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf3848c3-7fbb-4419-92f8-8065cc2b2950" name="Default Changelist" comment="" />
+      <created>1620119096165</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1620119096165</updated>
+      <workItem from="1620119097274" duration="6028000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="208" y="0" key="#Project_Structure" timestamp="1620986980646">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="208" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1620986980646" />
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1620124744767" />
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621106833349">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1621106833349" />
+    <state x="410" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1621008440449">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="410" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1621008440449" />
+    <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1620923318476">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1620923318476" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1621165867232">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1621165867232" />
+    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1621165867232">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1621165867232" />
+    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1621165867232">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1621165867232" />
+    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1621165867232">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1621165867232" />
+    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1621165867227">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1621165867227" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1621165867227">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1621165867227" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1621165867227">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1621165867227" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1621165867227">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1621165867227" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1620125170405" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1620923275254">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1620923275254" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1620924254316">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1620924254316" />
+    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1621107612725">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="189" y="52" width="902" height="628" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1280.680@0.0.1280.680" timestamp="1621107612725" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/thebestlab6$ServerMain.ic" NAME="ServerMain Coverage Results" MODIFIED="1621106470579" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.thebestlab6.server.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/thebestlab6$ClientMain.ic" NAME="ClientMain Coverage Results" MODIFIED="1621107646657" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.thebestlab6.client.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,6 +1,7 @@
 package com.thebestlab6.server.utils;
 
 import com.thebestlab6.common.objects.*;
+import com.thebestlab6.server.ServerMain;
 import com.thebestlab6.server.utils.*;
 
 import java.io.IOException;
@@ -17,12 +18,13 @@ public class ServerHelper {
         this.serverSender = serverSender;
     }
 
-    public void run() throws IOException, ClassNotFoundException {
+    public void run(){
         while(true) {
             Request request = serverReceiver.getRequest();
             Response response = analyzer.handle(request);
-            if (!serverSender.send(response))
-                ResponseBuilder.appendError("Ошибка при отправке ответа");
+            if (!serverSender.send(response)) {
+                ServerMain.logger.info("Error while sending answer");
+            }
         }
     }
 }

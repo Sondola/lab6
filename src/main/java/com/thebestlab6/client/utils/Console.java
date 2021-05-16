@@ -84,33 +84,30 @@ public class Console {
     /**
      * Work with a script
      *
-     * @param path     path to file passed by chooseCommand method
+     * @param file path to file passed by chooseCommand method
      * @see AskManager#addScriptMode(BufferedReader)
      */
-    public void scriptMode(String path) {
+    public void scriptMode(String file) {
         try {
-            FileInputStream file = new FileInputStream(path);
-            BufferedInputStream bf2 = new BufferedInputStream(file);
+            FileInputStream fis = new FileInputStream(file);
+            BufferedInputStream bf2 = new BufferedInputStream(fis);
             BufferedReader r2 = new BufferedReader(new InputStreamReader(bf2, StandardCharsets.UTF_8));
 
-            //BufferedReader br = new BufferedReader(new FileReader(path));
-            askManager.addScriptMode(r2);
 
             System.out.println("Взаимодействие с файлом-скриптом");
 
 //            this.setWork(true);
             String line = r2.readLine().trim();
             while (line != null && this.work) {
-//            while(line != null){
+                askManager.addScriptMode(r2);
                 clientHelper.handle(line);
                 line = r2.readLine();
             }
+            setWork(true);
         } catch (FileNotFoundException e) {
             System.out.println("Файл не найден");
         } catch (IOException e) {
             System.out.println("Ошибка ввода");
         }
     }
-
-
 }

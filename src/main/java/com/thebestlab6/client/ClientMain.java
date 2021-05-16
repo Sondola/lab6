@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 
 public class ClientMain {
 
-    public static final int PORT = 1488;
+    public static final int PORT = 1497;
 
     public static void main(String[] args) {
         BufferedInputStream bf = new BufferedInputStream(System.in);
@@ -23,9 +23,10 @@ public class ClientMain {
             InetAddress ADDR = InetAddress.getByName("localhost");
             InetSocketAddress socketAddress = new InetSocketAddress(ADDR, PORT);
             DatagramChannel datagramChannel = DatagramChannel.open();
-            ClientSender sender = new ClientSender(datagramChannel, socketAddress);
-            ClientReciever reciever = new ClientReciever(datagramChannel, socketAddress, PORT);
-            ClientHelper client = new ClientHelper(ADDR, reciever, sender, stringWorking);
+            datagramChannel.connect(socketAddress);
+            ClientSender sender = new ClientSender(socketAddress, datagramChannel);
+            ClientReceiver reciever = new ClientReceiver(datagramChannel);
+            ClientHelper client = new ClientHelper(reciever, sender, stringWorking);
             Console console = new Console(r, askManager, client);
             stringWorking.addConsole(console);
             console.interactiveMode();

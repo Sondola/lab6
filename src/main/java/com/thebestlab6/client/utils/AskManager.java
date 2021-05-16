@@ -284,7 +284,7 @@ public class AskManager {
     }
 
     public Mood askMood() throws IncorrectScriptInputException{
-        Mood mood = null;
+        Mood mood = Mood.NULL;
         while(true) {
             try {
                 System.out.println("Введите настроение из предложенных вариантов: ");

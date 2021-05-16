@@ -3,6 +3,9 @@ package com.thebestlab6.server.commands;
 import com.thebestlab6.common.data.*;
 import com.thebestlab6.common.exceptions.*;
 import com.thebestlab6.server.utils.CollectionManager;
+import com.thebestlab6.server.utils.ResponseBuilder;
+
+import javax.xml.stream.XMLStreamException;
 
 public class RemoveAllByCar implements Executable{
     private CollectionManager collectionManager;
@@ -21,11 +24,8 @@ public class RemoveAllByCar implements Executable{
             else throw new NoElementsInCollectionException("Коллекция пуста!");
             return true;
         } catch (WrongAmountOfElementsException | NoElementsInCollectionException e) {
-            System.out.println(e.getMessage());
+            ResponseBuilder.appendError(e.getMessage());
             return false;
-        } /*catch (IncorrectScriptInputException e) {
-            System.out.println("Не удалось выполнить скрипт! Введены некорректные данные!");
-            return false;
-        }*/
+        }
     }
 }

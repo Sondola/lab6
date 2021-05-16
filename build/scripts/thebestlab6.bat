@@ -82,10 +82,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\thebestlab6-1.0-SNAPSHOT.jar;%APP_HOME%\lib\jaxb-impl-2.1.3.jar;%APP_HOME%\lib\jaxb-api-2.1.jar;%APP_HOME%\lib\stax-api-1.0-2.jar;%APP_HOME%\lib\activation-1.1.jar
+set CLASSPATH=%APP_HOME%\lib\thebestlab6-1.0-SNAPSHOT-CLIENT.jar;%APP_HOME%\lib\jaxb-impl-2.1.3.jar;%APP_HOME%\lib\jaxb-api-2.1.jar;%APP_HOME%\lib\stax-api-1.0-2.jar;%APP_HOME%\lib\activation-1.1.jar
 
 @rem Execute thebestlab6
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %THEBESTLAB6_OPTS%  -classpath "%CLASSPATH%" com.thebestlab6.server.ServerMain %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %THEBESTLAB6_OPTS%  -classpath "%CLASSPATH%" com.thebestlab6.client.ClientMain %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell

@@ -3,6 +3,7 @@ package com.thebestlab6.server.commands;
 import com.thebestlab6.common.exceptions.NoElementsInCollectionException;
 import com.thebestlab6.common.exceptions.WrongAmountOfElementsException;
 import com.thebestlab6.server.utils.CollectionManager;
+import com.thebestlab6.server.utils.ResponseBuilder;
 
 public class MaxByCreationDate implements Executable{
     private CollectionManager collectionManager;
@@ -19,7 +20,7 @@ public class MaxByCreationDate implements Executable{
             else throw new NoElementsInCollectionException("Коллекция пуста!");
             return true;
         } catch (WrongAmountOfElementsException | NoElementsInCollectionException e) {
-            System.out.println(e.getMessage());
+            ResponseBuilder.appendError(e.getMessage());
             return false;
         }
     }

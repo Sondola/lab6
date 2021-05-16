@@ -3,6 +3,9 @@ package com.thebestlab6.server.commands;
 import com.thebestlab6.common.data.HumanBeing;
 import com.thebestlab6.common.exceptions.*;
 import com.thebestlab6.server.utils.CollectionManager;
+import com.thebestlab6.server.utils.ResponseBuilder;
+
+import javax.xml.stream.XMLStreamException;
 
 public class Update implements Executable{
     private CollectionManager collectionManager;
@@ -19,18 +22,15 @@ public class Update implements Executable{
             if (human != null) {
                 human = (HumanBeing) obj;
                 collectionManager.setNewHuman(id, human);
-                System.out.println("Данные были успешно обновлены!");
+                ResponseBuilder.append("Данные были успешно обновлены!");
             }
             else throw new WrongIdException("Не найден человек с таким id");
             return true;
         } catch (WrongAmountOfElementsException | WrongIdException e) {
-            System.out.println(e.getMessage());
+            ResponseBuilder.appendError(e.getMessage());
             return false;
-        } /*catch (IncorrectScriptInputException e) {
-            System.out.println("Не удалось выполнить скрипт! Введены некорректные данные!");
-            return false;
-        } */catch (NumberFormatException e) {
-            System.out.println("Некорректно введен id");
+        } catch (NumberFormatException e) {
+            ResponseBuilder.appendError("Некорректно введен id");
             return false;
         }
     }

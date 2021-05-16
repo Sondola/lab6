@@ -147,7 +147,7 @@ public class HumanBeing implements Serializable {
         human += "Soundtrack name: " + soundtrackName + "\n";
         human += "Minutes of waiting: " + minutesOfWaiting + "\n";
         human += "Mood: " + (mood != null? mood.toString() : "") + "\n";
-        human += "Car: " + car.getName() + "\n";
+        human += "Car: " + car.getName();
         return human;
     }
 

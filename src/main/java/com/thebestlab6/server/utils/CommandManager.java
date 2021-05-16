@@ -10,7 +10,6 @@ public class CommandManager {
     private Executable update;
     private Executable remove_by_id;
     private Executable clear;
-    private Executable save;
     private Executable execute_script;
     private Executable exit;
     private Executable add_if_max;
@@ -27,9 +26,8 @@ public class CommandManager {
                           Executable update,
                           Executable remove_by_id,
                           Executable clear,
-                          Executable save,
-                          //Executable execute_script,
-                          //Executable exit,
+                          Executable execute_script,
+                          Executable exit,
                           Executable add_if_max,
                           Executable add_if_min,
                           Executable remove_greater,
@@ -43,9 +41,8 @@ public class CommandManager {
         this.update = update;
         this.remove_by_id = remove_by_id;
         this.clear = clear;
-        this.save = save;
-        //this.execute_script = execute_script;
-        //this.exit = exit;
+        this.execute_script = execute_script;
+        this.exit = exit;
         this.add_if_max = add_if_max;
         this.add_if_min = add_if_min;
         this.remove_greater = remove_greater;
@@ -80,10 +77,6 @@ public class CommandManager {
 
     public boolean clear(String str, Object obj) {
         return clear.execute(str, obj);
-    }
-
-    public boolean save(String str, Object obj) {
-        return save.execute(str, obj);
     }
 
     public boolean execute_script(String str, Object obj) {
